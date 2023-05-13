@@ -28,7 +28,7 @@ export const ResultContextProvider = ({ children }) => {
     }
 
     return (
-        <ResultContext.Provider value={{ getResults, results, searchTerm, setSearchTerm, isLoading }} >
+        <ResultContext.Provider value={{ getResults, results, searchTerm, setSearchTerm, isLoading, setResults}} >
             {children}
         </ResultContext.Provider>
     )
