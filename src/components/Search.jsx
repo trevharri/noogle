@@ -6,7 +6,7 @@ import { useResultContext } from './contexts/ResultContextProvider';
 const Search = () => {
   const [text, setText] = useState('');
   const { setSearchTerm, setResults } = useResultContext();
-  const [debouncedValue] = useDebounce(text, 500);
+  const [debouncedValue] = useDebounce(text, 600);
 
   useEffect(() => {
     if(debouncedValue) setSearchTerm(debouncedValue)
